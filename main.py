@@ -13,7 +13,7 @@ def process_etl():
         engine = sqlalchemy.create_engine(connection_string)
         print('Conexion exitosa')
     except Exception as e:
-        print(f"Error en la conexion: {e}")
+        print(f"Errores en la conexion: {e}")
     
     # Descargar CSV
     url = "https://strecursoschallenge.blob.core.windows.net/challenge/nuevas_filas.csv?sp=r&st=2024-08-26T20:28:39Z&se=2024-12-31T04:28:39Z&sv=2022-11-02&sr=b&sig=7vZYDdZc7%2B%2FcwVYEAlSCzixAKiSrKlaeU8%2Fns%2B2YQVU%3D"
