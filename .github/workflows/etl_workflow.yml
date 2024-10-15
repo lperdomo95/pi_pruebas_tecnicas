@@ -2,7 +2,7 @@ name: ETL Workflow
 
 on:
   schedule:
-    - cron: '30 12 * * *'  # Esto ejecuta el flujo a las 12:20 UTC, que son las 9:20 AM en Argentina
+    - cron: '0 20 * * 1'  # Esto ejecuta el flujo a las 20 UTC, que son las 17 PM en Argentina los dias Lunes
 
 jobs:
   run_etl:
