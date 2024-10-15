@@ -23,5 +23,5 @@ jobs:
       
       - name: Run ETL Process
         env:
-          DB_CONNECTION_STRING: ${{ secrets.DB_CONNECTION_STRING }}  # Usa tu secreto aquí
+          DB_CONNECTION_STRING: ${{ secrets.DB_CONNECTION}}  # Usa tu secreto aquí
         run: python main.py
