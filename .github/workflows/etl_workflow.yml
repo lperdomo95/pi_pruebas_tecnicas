@@ -21,6 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
-      - name: Run ETL script
-        run: |
-          python main.py
+      - name: Run ETL Process
+        env:
+          DB_CONNECTION_STRING: ${{ secrets.DB_CONNECTION_STRING }}  # Usa tu secreto aquí
+        run: python main.py
